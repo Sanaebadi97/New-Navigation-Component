@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="test.test.navigation.ui.fragments.MainFragment"
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_viewTransactionFragment"
+            app:destination="@id/viewTransactionFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_chooseRecipientFragment"
+            app:destination="@id/chooseRecipientFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_viewBalanceFragment"
+            app:destination="@id/viewBalanceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/chooseRecipientFragment"
+        android:name="test.test.navigation.ui.fragments.ChooseRecipientFragment"
+        android:label="ChooseRecipientFragment" >
+        <action
+            android:id="@+id/action_chooseRecipientFragment_to_specifyAmountFragment"
+            app:destination="@id/specifyAmountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comfirmationFragment"
+        android:name="test.test.navigation.ui.fragments.ComfirmationFragment"
+        android:label="ComfirmationFragment" />
+    <fragment
+        android:id="@+id/specifyAmountFragment"
+        android:name="test.test.navigation.ui.fragments.SpecifyAmountFragment"
+        android:label="SpecifyAmountFragment" >
+        <action
+            android:id="@+id/action_specifyAmountFragment_to_comfirmationFragment"
+            app:destination="@id/comfirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewBalanceFragment"
+        android:name="test.test.navigation.ui.fragments.ViewBalanceFragment"
+        android:label="ViewBalanceFragment" />
+    <fragment
+        android:id="@+id/viewTransactionFragment"
+        android:name="test.test.navigation.ui.fragments.ViewTransactionFragment"
+        android:label="ViewTransactionFragment" />
+</navigation>
