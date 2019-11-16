@@ -1,7 +1,8 @@
-package test.test.navigation
+package test.test.navigation.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import test.test.navigation.R
 
 class MainActivity : AppCompatActivity() {
 
